@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource music;
-    public AudioSource audioVFX;
+    private static AudioManager instance;
 
-    public AudioClip musicClipMenu;
-    public AudioClip musicClipGame;
+    public AudioSource audioVFX;
 
     public AudioClip musicClipOnbutton;
 
@@ -19,20 +17,25 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip musicClipItem;
 
-    private void Awake()
+/*    private void Awake()
     {
-        // Giữ object này tồn tại khi load scene mới
-        DontDestroyOnLoad(gameObject);
-    }
+        // Kiểm tra xem đã có instance tồn tại chưa
+        if (instance == null)
+        {
+            // Nếu chưa có instance, đặt instance này là singleton
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            // Nếu đã có instance, xóa bản sao này
+            Destroy(gameObject);
+        }
+    }*/
 
-    void Start()
-    {
-        music.clip = musicClipMenu;
-        music.Play();
-    }
     void PlayAudioVFX(AudioClip clip)
     {
-        audioVFX.clip = musicClipMenu;
+        audioVFX.clip = musicClipAttack;
         audioVFX.PlayOneShot(clip);
     }
 }
