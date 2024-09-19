@@ -10,10 +10,6 @@ public class ActiviMenu : MonoBehaviour
     public PlayerScore playerScore;
     //private bool isPaused = false;
     // Start is called before the first frame update
-    private void Start()
-    {
-        PauseGame1();
-    }
     public void PauseGame1()
     {
         image.SetActive(true);

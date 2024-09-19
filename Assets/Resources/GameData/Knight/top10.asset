@@ -13,23 +13,13 @@ MonoBehaviour:
   m_Name: top10
   m_EditorClassIdentifier: 
   topScores:
+  - playerName: qqqq
+    score: 152
+  - playerName: hung122
+    score: 151
   - playerName: huhu
     score: 134
-  - playerName: haha
-    score: 100
   - playerName: hung
     score: 100
   - playerName: hunghumg
-    score: 100
-  - playerName: 
-    score: 100
-  - playerName: hung123
-    score: 100
-  - playerName: hung88
-    score: 100
-  - playerName: fasf
-    score: 100
-  - playerName: aaaa
-    score: 100
-  - playerName: vvvv
     score: 100

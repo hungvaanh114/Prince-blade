@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc45f60a76ce2c4c82d2d14babef32d, type: 3}
   m_Name: KnightData
   m_EditorClassIdentifier: 
-  health: 50
+  health: 100
   mana: 100
   attackPower: 10
   speed: 7
@@ -20,6 +20,6 @@ MonoBehaviour:
   jumpHeight: 30
   maxHP: 100
   maxMana: 100
-  potionBlue: 4
-  potionRed: 4
+  potionBlue: 2
+  potionRed: 2
   gold: 0
