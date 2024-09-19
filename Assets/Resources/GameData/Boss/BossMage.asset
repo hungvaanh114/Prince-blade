@@ -15,8 +15,8 @@ MonoBehaviour:
   name: Skeleton
   positionX: 77.33
   positionY: 19.48
-  maxHp: 100
-  hp: 100
+  maxHp: 500
+  hp: 500
   speed: 2
   attackPower: 1
   attackSpeed: 1

@@ -9,6 +9,7 @@ public class MageChaseKnight : MonoBehaviour
     private float timer = 0.0f;
     private float fireRate = 5.0f;
     private bool isAttack = false;
+    public int randomValue;
     void Start()
     {
         
@@ -21,7 +22,7 @@ public class MageChaseKnight : MonoBehaviour
             // Kiểm tra xem thời gian đã trôi qua có đủ 2 giây chưa
             if (timer >= fireRate)
             {
-                int randomValue = Random.Range(1, 8);
+                 randomValue = Random.Range(1, 8);
                 switch (randomValue)
                 {
                     case 1:

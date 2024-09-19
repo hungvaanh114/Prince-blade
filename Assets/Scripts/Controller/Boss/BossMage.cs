@@ -142,7 +142,7 @@ public class BossMage : MonoBehaviour
     void FireBall5()
     {
         BoxCollider2D boxCollider2D = firePoint5.GetComponent<BoxCollider2D>();
-        Vector3 offset = new Vector3(-boxCollider2D.size.x / 2, boxCollider2D.size.y /10, 0f);
+        Vector3 offset = new Vector3(-boxCollider2D.size.x / 2.2f, -boxCollider2D.size.y/3f, 0f);
         Vector3 spawnPosition = firePoint5.transform.position + offset;
         GameObject bullet = Instantiate(fireBall5, spawnPosition, Quaternion.identity);
     }
